@@ -460,6 +460,7 @@ app.listen(port, () => {
 })
 ```
 **参考：**
+
 https://github.com/jprichardson/node-fs-extra<br>
 https://github.com/prettier/eslint-plugin-prettier<br>
 https://github.com/ishen7/koa2-connect-history-api-fallback<br>
@@ -543,7 +544,7 @@ https://github.com/ant-design/babel-plugin-import
 
 ### 利用 verdaccio 搭建 npm 私服
 
-编写 npm 包必然要测试包的发布、引用是否正常，唯一的要求，安装各种包一定快， verdaccio 是一个很不错的选择。一键搭建。期待达到的效果，通过一定的配置，找不到的依赖包会去外网下载。
+编写 npm 包必然要测试包的发布、引用是否正常， verdaccio 是一个很不错的选择，一键搭建。期待达到的效果，安装各种包一定快，并且通过一定的配置，找不到的依赖包会去外网下载。
 
 ```
 // 本地找不到的包就代理到淘宝源
@@ -572,6 +573,7 @@ packages:
    解决：移除 babel 中的垫片代码，利用 ts 的代码编译将代码编译为 ES5；打包时剔除 npm 包的依赖代码，在项目中运行时再安装，最终压缩后 js 大小为 25k。
 
 2. 代码压缩后 Vue 组件找不到文件名，导致组件注册失效?
+
    分析：官方说明当 Vue 组件不设置 name 时默认会取类名作为组件名，但测试的两种打包方式（全局打包、按需打包）均出现不指定 name 名抛错的问题。
 
    解决：
@@ -586,3 +588,4 @@ packages:
       // ...
     }
    ```  
+3. commit 的时候进行 eslint 校验，因为本地安装了 nvm 进行 node 版本，导致提交时校验代码抛错，又考虑目前保存代码时已进行代码校验，放缓该方案的实践。
