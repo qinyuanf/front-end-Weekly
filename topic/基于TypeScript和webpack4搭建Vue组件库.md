@@ -3,7 +3,19 @@
 ### 背景
 众所周知，基础组件库是从业务中抽象出来的，功能相对单一、独立，在整个系统的代码层次中位于最底层，被其他代码所依赖。由于考虑到扩展性及通用性，基础组件基本不包含任何业务代码或 http 请求。但实际开发中又会存在着对某块业务的封装，或者是交互设计师针对当前业务做出特定交互设计，这时就需要一个系统来承载这些组件，便于跨业务单元进行调用。
 
-> vue-cli3/webpack-chain
+### 概述
+从下列几点来简述组件库的搭建过程：
+* vue-cli3/webpack-chain
+* TypeScript 支持
+* 热更新/模块热替换
+* 组件库的适配
+* 按需加载
+* 开发体验
+* 使用体验
+* 利用 verdaccio 搭建 npm 私服
+* 后续
+
+### vue-cli3/webpack-chain
 
 vue-cli3 相较于2的版本比较大的更新是避免用户直接操作 webpack 配置，默认场景下底层配置项在项目中不可见（可手动导出）。脚手架实现了对 webpack 配置的二次封装，形成了一套新的配置语法，在 vue.config.js 进行配置。官方推荐使用链式操作（基于 webpack-chain），如下：
 
@@ -31,7 +43,7 @@ module.exports = {
 
 **参考：** https://cli.vuejs.org/zh/guide/webpack.html
 
-> TypeScript 支持
+### TypeScript 支持
 
 * 核心 npm 包：
    * `typescript`
@@ -143,7 +155,7 @@ https://babeljs.io/docs/en/babel-plugin-proposal-class-properties<br>
 https://babeljs.io/docs/en/babel-plugin-proposal-decorators<br>
 
 
-> 热更新/模块热替换
+### 热更新/模块热替换
 
 * 热更新：修改代码保存后页面自动刷新，不保留页面状态；
 * 模块热替换：修改代码保存后只替换修改的代码块，保留页面状态
@@ -203,7 +215,7 @@ https://webpack.docschina.org/plugins/hot-module-replacement-plugin/</br>
 https://webpack.docschina.org/configuration/dev-server/<br/>
 https://github.com/microsoft/TypeScript-Vue-Starter/blob/master/webpack.config.js
 
-> 组件库的适配
+### 组件库的适配
 
 一个业务组件被设计出来必然要支持各种机型，组件如何去更好地适配，即要在开发时不给开发人员带来困扰，又能轻易地接入到各个系统当中去，这是组件库在搭建时必然要考虑的问题。常见的适配方案：
 * 百分比 + px
@@ -315,7 +327,7 @@ https://github.com/evrone/postcss-px-to-viewport<br>
 https://github.com/rodneyrehm/viewport-units-buggyfill<br>
 https://github.com/springuper/postcss-viewport-units<br>
 
-> 按需加载
+### 按需加载
 
 印象中的按需加载
 
@@ -402,7 +414,7 @@ https://github.com/youzan/vant<br>
 https://github.com/ElemeFE/element<br>
 
 
-> 开发体验
+### 开发体验
 
 * 如何创建一个组件
    * packages/components 下创建组件文件夹、文件及 README
@@ -453,7 +465,7 @@ https://github.com/prettier/eslint-plugin-prettier<br>
 https://github.com/ishen7/koa2-connect-history-api-fallback<br>
 
 
- > 使用体验
+### 使用体验
  * markdown 预览功能
  ```
 
@@ -529,7 +541,7 @@ https://github.com/QingWei-Li/vue-markdown-loader<br>
 https://github.com/zenorocha/clipboard.js<br>
 https://github.com/ant-design/babel-plugin-import
 
-> 利用 verdaccio 搭建私服
+### 利用 verdaccio 搭建 npm 私服
 
 编写 npm 包必然要测试包的发布、引用是否正常，唯一的要求，安装各种包一定快， verdaccio 是一个很不错的选择。一键搭建。期待达到的效果，通过一定的配置，找不到的依赖包会去外网下载。
 
@@ -552,7 +564,7 @@ packages:
 
 ```
 
-> 后续
+### 后续
 1. 单文件打包过大，如 location 组件打包后 js 大小为 96k，如何解决？
 
    分析：一部分代码来源于 babel 编译时插入的垫片代码，一部分代码来源于 import 进来的包的代码。
