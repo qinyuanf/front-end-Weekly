@@ -65,7 +65,7 @@ tsconfig.json 关键配置
   // 编译配置
   "compilerOptions": {
     // 编译输出目标 ES 版本
-    "target": "ES3",
+    "target": "ES5",
     // 采用的模块系统
     "module": "ESNext",
     // 启用装饰器
