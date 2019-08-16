@@ -6,7 +6,7 @@
 
 3、当在开发人员任务开发完成之后创建 merge request，目标分支指向需求分支，并指向对应相关 review 人员；
 
-![review-1](https://github.com/qinyuanf/front-end-Weekly/blob/master/screenshot/review/reivew-1.png "review-1")
+![review-1](https://github.com/qinyuanf/front-end-Weekly/blob/master/screenshot/review/review-1.png "review-1")
 ![review-2](https://github.com/qinyuanf/front-end-Weekly/blob/master/screenshot/review/review-2.png "review-2")
 
 4、编辑 mr 详情，包括主题、描述、review 人员、确认分支信息等；
