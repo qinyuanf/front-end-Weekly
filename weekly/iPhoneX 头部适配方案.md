@@ -19,5 +19,3 @@
 }
 ```
 参考：https://blog.csdn.net/qq_42354773/article/details/81018615
-
-## 基于 Merge Request 的代码 review（by qinyf）
