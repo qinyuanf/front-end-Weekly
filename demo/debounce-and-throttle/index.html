@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>防抖和节流</title>
+</head>
+<body>
+  <input type="text" id="debounce">
+  <button id="button">请疯狂点击</button>
+</body>
+<script src="./index.js"></script>
+<script>
+  const input = document.getElementById('debounce')
+  // 直接写在 html 上用 oninput，写 js 里用 input，折腾半天
+  // debounce 如何调用比实现还费脑子
+  input.addEventListener('input', debounce((e) => {
+    console.log(`向后端发送请求，参数为 ${e.target.value}`)
+  }, 1000))
+
+  const button = document.getElementById('button')
+  button.addEventListener('click', throttle((e) => {
+    console.log(`在${Date.now()}触发`)
+  }, 750))
+</script>
+</html>
