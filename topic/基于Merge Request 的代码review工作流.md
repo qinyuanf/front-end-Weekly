@@ -1,4 +1,4 @@
-## 基于 Merge Request 的代码 review 工作流（by qinyf）
+## 基于 Merge Request 的代码 review 工作流（by 元丰）
 
 1、接到新需求后需求负责人从 master 上创建需求分支（格式如，**test_项目名称_创建者名称_日期**）；
 
@@ -25,3 +25,18 @@
 7、利用代码评论功能进行互动，并且每一条代码修改建议都会以邮件的形式通知开发者。
 
 ![review-7](https://github.com/qinyuanf/front-end-Weekly/blob/master/screenshot/review/review-7.png "review-7")
+
+***
+**2019.09.16** 更新
+
+实践总结：
+
+> 如何进行指定 reivew 人员并进行及时响应？
+
+推荐进行 **结对 review，两人一组** ，效率高，响应快。
+
+> 提测后如何平衡 bug 的快速修复迭代和 review 质量之间的关系？
+
+从 test 分支上拉取 **debug_项目名称_创建者名称_日期**
+分支，作为 bug 修复分支和测试环境部署的分支，该分支可多人共用，且具有快速迭代的特点，问题修复后不走代码 review 直接部署到测试环境，代码的 review 则通过在 debug 分支上提交 mr 到 test 的过程中进行。
+
