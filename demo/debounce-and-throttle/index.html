@@ -7,21 +7,59 @@
   <title>防抖和节流</title>
 </head>
 <body>
-  <input type="text" id="debounce">
-  <button id="button">请疯狂点击</button>
+  <h1>防抖</h1>
+  <div>
+    请输入搜索内容：
+    <input type="text" id="debounce">
+    <span class="searchText"></span>
+  </div>
+  <h1>节流</h1>
+  <p>请滚动下列蓝色区域</p>
+  <p class="scrollText"></p>
+  <div id="scrollContainer">
+    <p> item 1</p>
+    <p> item 2</p>
+    <p> item 3</p>
+    <p> item 4</p>
+    <p> item 5</p>
+    <p> item 6</p>
+    <p> item 7</p>
+    <p> item 8</p>
+    <p> item 9</p>
+    <p> item 10</p>
+    <p> item 12</p>
+    <p> item 13</p>
+    <p> item 14</p>
+    <p> item 15</p>
+    <p> item 16</p>
+    <p> item 17</p>
+    <p> item 18</p>
+    <p> item 19</p>
+  </div>
 </body>
 <script src="./index.js"></script>
 <script>
   const input = document.getElementById('debounce')
+  const searchText = document.querySelector('.searchText')
   // 直接写在 html 上用 oninput，写 js 里用 input，折腾半天
   // debounce 如何调用比实现还费脑子
   input.addEventListener('input', debounce((e) => {
-    console.log(`向后端发送请求，参数为 ${e.target.value}`)
+    const value = e.target.value
+    searchText.innerHTML = `向后端发送请求，内容为 ${value}`
   }, 1000))
 
-  const button = document.getElementById('button')
-  button.addEventListener('click', throttle((e) => {
-    console.log(`在${Date.now()}触发`)
+  const scrollContainer = document.getElementById('scrollContainer')
+  const scrollText = document.querySelector('.scrollText')
+  scrollContainer.addEventListener('scroll', throttle((e) => {
+    scrollText.innerHTML = `当前滚动距离为 ${ scrollContainer.scrollTop } px`
   }, 750))
 </script>
+<style>
+  #scrollContainer {
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    background-color: aquamarine;
+  }
+</style>
 </html>
