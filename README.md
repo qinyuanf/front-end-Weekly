@@ -14,3 +14,5 @@
 * [App 内部 iPhoneX 头部适配实践](https://github.com/qinyuanf/front-end-Weekly/issues/1)
 
 * [防抖和节流的理解和使用](https://github.com/qinyuanf/front-end-Weekly/issues/5)
+
+* [如何在页面关闭时发送请求](https://github.com/qinyuanf/front-end-Weekly/issues/4)
