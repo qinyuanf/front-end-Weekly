@@ -18,9 +18,8 @@ const debounce = (fn, delay) => {
 // 节流，时间戳 + 定时器
 const throttle = (fn, delay) => {
   let timer = null
-  // 开始时间
+  // 开始时间，事件未开始就已赋值
   let startTime = Date.now()
-
   return function () {
     const endTime = Date.now()
     // 剩余时间

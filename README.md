@@ -3,7 +3,9 @@
 
 ## 专题
 
-* [基于 TypeScript + Webpack4 搭建 Vue 业务组件库](https://github.com/qinyuanf/front-end-Weekly/blob/master/topic/%E5%9F%BA%E4%BA%8ETypeScript%E5%92%8Cwebpack4%E6%90%AD%E5%BB%BAVue%E7%BB%84%E4%BB%B6%E5%BA%93.md)
+* [代码 reivew 该看什么？（多人维护，持续总结）](https://github.com/qinyuanf/front-end-Weekly/issues/7)
+
+* [基于 TypeScript + Webpack4 搭建 Vue 业务组件库](https://github.com/qinyuanf/front-end-Weekly/issues/6)
 
 * [基于 Merge Request 的代码 review](https://github.com/qinyuanf/front-end-Weekly/issues/2)
 
