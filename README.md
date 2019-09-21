@@ -11,7 +11,7 @@
 
 * [基于 Merge Request 的代码 review](https://github.com/qinyuanf/front-end-Weekly/issues/2)
 
-* [使用单元测试提高 Vue 项目的代码质量](weekly/vue-unit-test.md)
+* [使用单元测试提高 Vue 项目的代码质量](https://github.com/qinyuanf/front-end-Weekly/issues/3)
 
 ## 小记
 
