@@ -11,11 +11,11 @@
 
 * [基于 Merge Request 的代码 review](https://github.com/qinyuanf/front-end-Weekly/issues/2)
 
-* [使用单元测试提高 Vue 项目的代码质量](https://github.com/qinyuanf/front-end-Weekly/issues/3)
-
 ## 小记
 
 * [App 内部 iPhoneX 头部适配实践](https://github.com/qinyuanf/front-end-Weekly/issues/1)
+
+* [使用单元测试提高 Vue 项目的代码质量](https://github.com/qinyuanf/front-end-Weekly/issues/3)
 
 * [防抖和节流的理解和使用](https://github.com/qinyuanf/front-end-Weekly/issues/5)
 
