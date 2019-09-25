@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <div>
+      <label for="name">姓名：</label>
+      <input type="text" id="name">
+    </div>
+    <div>
+      <label for="sex">性别：</label>
+      <label for="male">男</label>
+      <input type="radio" id="male" name="sex" value="男" checked/>
+      <label for="female">女</label>
+      <input type="radio" id="female" name="sex" value="女"/>
+    </div>
+    <div>
+      <label for="age">年龄：</label>
+      <input type="text" id="age">
+    </div>
+  </form>
+  <button type="button" id="submit">提交</button>
+  <div id="content"></div>
+</body>
+<script src="../debounce-and-throttle/index.js"></script>
+<script>
+  const name = document.getElementById('name')
+  const sexes = document.getElementsByName('sex')
+  const age = document.getElementById('age')
+  const button = document.getElementById('submit')
+  const content = document.getElementById('content')
+
+  // 获取 sessionStorage 的值
+  name.value = sessionStorage.getItem('name')
+  age.value = sessionStorage.getItem('age')
+  for (let i = 0; i < sexes.length; i++) {
+    const sex = sexes[i]
+
+    if (sex.value === sessionStorage.getItem('sex')) {
+      sex.checked = true
+    }
+  }
+
+  // 监听输入值，并保存到 sessionStorage
+  name.addEventListener('input', debounce((e) => {
+    sessionStorage.setItem('name', e.target.value)
+  }, 500))
+
+  for (let i = 0; i < sexes.length; i++) {
+    const sex = sexes[i]
+
+    sex.addEventListener('click', (e) => {
+      sessionStorage.setItem('sex', e.target.value)
+    })
+  }
+
+  age.addEventListener('input', debounce((e) => {
+    sessionStorage.setItem('age', e.target.value)
+  }, 500))
+
+  // 点击并保存
+  button.addEventListener('click', () => {
+    const object = {
+      name: name.value,
+      sex: '',
+      age: age.value
+    }
+    for (let i = 0; i < sexes.length; i++) {
+      const sex = sexes[i]
+
+      if (sex.checked) {
+        object.sex = sex.value
+      }
+    }
+    content.innerText = JSON.stringify(object)
+  })
+</script>
+</html>
