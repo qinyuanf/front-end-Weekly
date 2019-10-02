@@ -3,17 +3,17 @@
 
 ## 专题
 
-* [多方案实现多栏布局](https://github.com/qinyuanf/front-end-Weekly/issues/10)
-
 * [前端性能优化的思考](https://github.com/qinyuanf/front-end-Weekly/issues/8)
 
-* [代码 reivew 该看什么？（多人维护，持续总结）](https://github.com/qinyuanf/front-end-Weekly/issues/7)
+* [代码 review 该看什么？（多人维护，持续总结）](https://github.com/qinyuanf/front-end-Weekly/issues/7)
 
 * [基于 TypeScript + Webpack4 搭建 Vue 业务组件库](https://github.com/qinyuanf/front-end-Weekly/issues/6)
 
-* [基于 Merge Request 的代码 review](https://github.com/qinyuanf/front-end-Weekly/issues/2)
+* [如何落地基于 Merge Request 的代码 review 工作流](https://github.com/qinyuanf/front-end-Weekly/issues/2)
 
 ## 小记
+
+* [多方案实现多栏布局](https://github.com/qinyuanf/front-end-Weekly/issues/10)
 
 * [async_hooks 学习](https://github.com/qinyuanf/front-end-Weekly/issues/9)
 
