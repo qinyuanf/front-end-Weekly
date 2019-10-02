@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>多栏布局实践</title>
+</head>
+<body>
+  <h1>水平两栏布局（PC 端）</h1>
+  <!-- float 浮动实现 -->
+  <section class="pc-two-column pc-two-column--float">
+    <div class="left">左侧100px</div>
+    <div class="right">float 的形式实现水平两栏布局</div>
+  </section>
+  <!-- absolute 绝对定位实现 -->
+  <section class="pc-two-column pc-two-column--absolute">
+    <div class="left">左侧100px</div>
+    <div class="right">absolute 的形式实现水平两栏布局</div>
+  </section>
+  <!-- flex 弹性布局实现 -->
+  <section class="pc-two-column pc-two-column--flex">
+    <div class="left">左侧100px</div>
+    <div class="right">flex 的形式实现水平两栏布局</div>
+  </section>
+  <!-- table-cell 表格布局实现 -->
+  <section class="pc-two-column pc-two-column--table-cell">
+    <div class="left">左侧100px</div>
+    <div class="right">table-cell 的形式实现水平两栏布局</div>
+  </section>
+  <!-- float + calc 实现 -->
+  <section class="pc-two-column pc-two-column--float-calc">
+    <div class="left">左侧100px</div>
+    <div class="right">float + calc 的形式实现水平两栏布局</div>
+  </section>
+  <!-- grid 布局实现 -->
+  <section class="pc-two-column pc-two-column--grid">
+    <div class="left">左侧100px</div>
+    <div class="right">grid 的形式实现水平两栏布局</div>
+  </section>
+
+  <h1>水平三栏布局（PC 端）</h1>
+  <!-- float 浮动实现 -->
+  <section class="pc-three-column pc-three-column--float">
+    <!-- 注意 html 顺序 -->
+    <div class="left">左侧100px</div>
+    <div class="right">右侧100px</div>
+    <div class="middle">float 的形式实现水平三栏布局</div>
+  </section>
+  <!-- absolute 绝对定位实现 -->
+  <section class="pc-three-column pc-three-column--absolute">
+    <div class="left">左侧100px</div>
+    <div class="middle">absolute 的形式实现水平三栏布局</div>
+    <div class="right">右侧100px</div>
+  </section>
+  <!-- flex 弹性布局实现 -->
+  <section class="pc-three-column pc-three-column--flex">
+    <div class="left">左侧100px</div>
+    <div class="middle">flex 的形式实现水平三栏布局</div>
+    <div class="right">右侧100px</div>
+  </section>
+  <!-- table-cell 表格布局实现 -->
+  <section class="pc-three-column pc-three-column--table-cell">
+    <div class="left">左侧100px</div>
+    <div class="middle">table-cell 的形式实现水平三栏布局</div>
+    <div class="right">右侧100px</div>
+  </section>
+  <!-- float + calc 实现 -->
+  <section class="pc-three-column pc-three-column--float-calc">
+    <div class="left">左侧100px</div>
+    <div class="middle">float-calc 的形式实现水平三栏布局</div>
+    <div class="right">右侧100px</div>
+  </section>
+  <!-- grid 布局实现 -->
+  <section class="pc-three-column pc-three-column--grid">
+    <div class="left">左侧100px</div>
+    <div class="middle">grid 的形式实现水平三栏布局</div>
+    <div class="right">右侧100px</div>
+  </section>
+
+  <h1>垂直两栏布局（移动端）</h1>
+  <!-- absolute 绝对定位实现 -->
+  <section class="mobile-two-column mobile-two-column--absolute">
+    <div class="top">顶部44px</div>
+    <div class="bottom">absolute 的形式实现垂直两栏布局</div>
+  </section>
+  <!-- flex 弹性布局实现 -->
+  <section class="mobile-two-column mobile-two-column--flex">
+    <div class="top">顶部44px</div>
+    <div class="bottom">flex 的形式实现垂直两栏布局</div>
+  </section>
+  <!-- table-cell 表格布局实现 -->
+  <section class="mobile-two-column mobile-two-column--table-cell">
+    <div class="top">顶部44px</div>
+    <div class="bottom">
+      <div class="content">
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+        table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局table-cell 的形式实现垂直两栏布局
+      </div>
+    </div>
+  </section>
+  <!-- calc 实现 -->
+  <section class="mobile-two-column mobile-two-column--calc">
+    <div class="top">顶部44px</div>
+    <div class="bottom">calc 的形式实现垂直两栏布局</div>
+  </section>
+  <!-- grid 布局实现 -->
+  <section class="mobile-two-column mobile-two-column--grid">
+    <div class="top">顶部44px</div>
+    <div class="bottom">grid 的形式实现垂直两栏布局</div>
+  </section>
+
+  <h1>垂直三栏布局（移动端）</h1>
+  <!-- absolute 绝对定位实现 -->
+  <section class="mobile-three-column mobile-three-column--absolute">
+    <div class="top">顶部44px</div>
+    <div class="middle">absolute 的形式实现垂直三栏布局</div>
+    <div class="bottom">底部44px</div>
+  </section>
+  <!-- flex 弹性布局实现 -->
+  <section class="mobile-three-column mobile-three-column--flex">
+    <div class="top">顶部44px</div>
+    <div class="middle">flex 的形式实现垂直三栏布局</div>
+    <div class="bottom">底部44px</div>
+  </section>
+  <!-- table-cell 表格布局实现 -->
+  <section class="mobile-three-column mobile-three-column--table-cell">
+    <div class="top">顶部44px</div>
+    <div class="middle">
+      <div class="content">
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+        table-cell 的形式实现垂直三栏布局
+      </div>
+    </div>
+    <div class="bottom">底部44px</div>
+  </section>
+  <!-- calc 实现 -->
+  <section class="mobile-three-column mobile-three-column--calc">
+    <div class="top">顶部44px</div>
+    <div class="middle">calc 的形式实现垂直三栏布局</div>
+    <div class="bottom">底部44px</div>
+  </section>
+  <!-- grid 布局实现 -->
+  <section class="mobile-three-column mobile-three-column--grid">
+    <div class="top">顶部44px</div>
+    <div class="middle">grid 的形式实现垂直三栏布局</div>
+    <div class="bottom">底部44px</div>
+  </section>
+</body>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* 水平两栏布局 */
+.pc-two-column, .pc-three-column {
+  /* BFC 盒模型，防止父元素塌陷 */
+  overflow: auto;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.pc-two-column > .left {
+  width: 100px;
+  height: 100%;
+  background-color: salmon;
+}
+.pc-two-column > .right {
+  height: 100%;
+  background-color: aquamarine;
+}
+
+.pc-two-column--float > .left {
+  float: left;
+}
+.pc-two-column--float > .right {
+  margin-left: 100px;
+}
+
+.pc-two-column--absolute {
+  position: relative;
+}
+.pc-two-column--absolute > .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.pc-two-column--absolute > .right {
+  margin-left: 100px;
+}
+
+.pc-two-column--flex {
+  display: flex;
+}
+.pc-two-column--flex > .right {
+  flex: 1;
+}
+
+.pc-two-column--table-cell {
+  width: 100%;
+  display: table;
+}
+.pc-two-column--table-cell > .left, .pc-two-column--table-cell > .right {
+  display: table-cell;
+}
+
+.pc-two-column--float-calc > .left {
+  float: left;
+}
+.pc-two-column--float-calc > .right{
+  float: left;
+  width: calc(100% - 100px);
+}
+
+.pc-two-column--grid {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 100px auto;
+}
+
+/* 水平三栏布局 */
+.pc-three-column > .left, .pc-three-column > .right{
+  width: 100px;
+  height: 100%;
+  background-color: tomato;
+}
+.pc-three-column > .middle {
+  height: 100%;
+  background-color: violet;
+}
+
+.pc-three-column--float > .left {
+  float: left;
+}
+.pc-three-column--float > .right {
+  float: right;
+}
+
+.pc-three-column--absolute {
+  position: relative;
+}
+.pc-three-column--absolute > .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.pc-three-column--absolute > .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.pc-three-column--absolute > .middle {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  top: 0;
+}
+
+.pc-three-column--flex {
+  display: flex;
+}
+.pc-three-column--flex > .middle {
+  flex: 1;
+}
+
+.pc-three-column--table-cell {
+  width: 100%;
+  display: table;
+}
+.pc-three-column--table-cell > .left,
+.pc-three-column--table-cell > .middle,
+.pc-three-column--table-cell > .right {
+  display: table-cell;
+}
+
+.pc-three-column--float-calc > .left,
+.pc-three-column--float-calc > .middle,
+.pc-three-column--float-calc > .right {
+  float: left;
+}
+.pc-three-column--float-calc > .middle {
+  width: calc(100% - 200px);
+}
+
+.pc-three-column--grid {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 100px auto 100px;
+}
+
+/* 垂直两栏布局 */
+.mobile-two-column, .mobile-three-column {
+  height: 300px;
+  margin-bottom: 10px;
+}
+.mobile-two-column > .top {
+  height: 44px;
+  background-color: thistle;
+}
+.mobile-two-column > .bottom {
+  overflow: auto;
+  background-color: silver;
+}
+
+.mobile-two-column--absolute {
+  position: relative;
+}
+.mobile-two-column--absolute > .top {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mobile-two-column--absolute > .bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  bottom: 0;
+}
+
+.mobile-two-column--flex {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-two-column--flex > .bottom {
+  flex: 1;
+}
+
+.mobile-two-column--table-cell {
+  width: 100%;
+  height: 300px;
+  display: table;
+}
+.mobile-two-column--table-cell > .top,
+.mobile-two-column--table-cell > .bottom {
+  display: table-row;
+}
+.mobile-two-column--table-cell > .bottom > .content {
+  height: 100%;
+  overflow: auto;
+}
+
+.mobile-two-column--calc > .bottom {
+  height: calc(100% - 44px);
+}
+
+.mobile-two-column--grid {
+  display: grid;
+  grid-template-rows: 44px auto;
+  grid-template-columns: 100%;
+}
+
+/* 垂直三栏布局 */
+.mobile-three-column > .top {
+  height: 44px;
+  background-color: sandybrown;
+}
+.mobile-three-column > .middle {
+  overflow: auto;
+  background-color: pink;
+}
+.mobile-three-column > .bottom {
+  height: 50px;
+  background-color: tomato;
+}
+
+.mobile-three-column--absolute {
+  position: relative;
+}
+.mobile-three-column--absolute > .top {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mobile-three-column--absolute > .middle {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  bottom: 50px;
+}
+.mobile-three-column--absolute > .bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.mobile-three-column--flex {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-three-column--flex > .middle {
+  flex: 1;
+}
+
+.mobile-three-column--table-cell {
+  display: table;
+}
+.mobile-three-column--table-cell > .top,
+.mobile-three-column--table-cell > .middle,
+.mobile-three-column--table-cell > .bottom {
+  display: table-row;
+}
+.mobile-three-column--table-cell > .middle .content {
+  height: 100%;
+  overflow: auto;
+}
+
+.mobile-three-column--calc > .middle {
+  height: calc(100% - 44px - 50px);
+}
+
+.mobile-three-column--grid {
+  display: grid;
+  grid-template-rows: 44px auto 50px;
+  grid-template-columns: 100%;
+}
+</style>
+</html>

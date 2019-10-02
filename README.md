@@ -3,6 +3,8 @@
 
 ## 专题
 
+* [多方案实现多栏布局](https://github.com/qinyuanf/front-end-Weekly/issues/10)
+
 * [前端性能优化的思考](https://github.com/qinyuanf/front-end-Weekly/issues/8)
 
 * [代码 reivew 该看什么？（多人维护，持续总结）](https://github.com/qinyuanf/front-end-Weekly/issues/7)
@@ -12,6 +14,8 @@
 * [基于 Merge Request 的代码 review](https://github.com/qinyuanf/front-end-Weekly/issues/2)
 
 ## 小记
+
+* [async_hooks 学习](https://github.com/qinyuanf/front-end-Weekly/issues/9)
 
 * [App 内部 iPhoneX 头部适配实践](https://github.com/qinyuanf/front-end-Weekly/issues/1)
 
