@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>css 盒模型</title>
+</head>
+<body>
+  <h1>css 盒模型的应用</h1>
+  <h3>BFC 的应用一：阻止元素外边距重叠</h3>
+  <div class="css-wrap-1">
+    <div class="first-wrap">
+      <div class="first">第一部分</div>
+    </div>
+    <div class="second">第二部分</div>
+  </div>
+  <h3>BFC 的应用二：阻止元素被浮动元素覆盖</h3>
+  <div class="css-wrap-2">
+    <div class="first">第一部分</div>
+    <div class="second">第二部分</div>
+  </div>
+  <h3>BFC 的应用三：高度计算包含浮动子元素</h3>
+  <div class="css-wrap-3">
+    <div class="first">第一部分</div>
+    <div class="second">第二部分</div>
+  </div>
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    margin-top: 30px;
+  }
+  .css-wrap-1 .first, .css-wrap-1 .second{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f55;
+    background-color: #fcc;
+  }
+  .css-wrap-1 .first-wrap {
+    /* 设置 BFC */
+    overflow: hidden;
+  }
+  .css-wrap-1 .first {
+    margin-bottom: 10px;
+  }
+  .css-wrap-1 .second {
+    margin-top: 30px;
+  }
+  
+  .css-wrap-2 .first {
+    width: 100px;
+    height: 100px;
+    background-color: #f55;
+    float: left;
+  }
+  .css-wrap-2 .second {
+    /* 设置 BFC */
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    background-color: #fcc;
+  }
+
+  .css-wrap-3 {
+    width: 300px;
+    border: 2px solid #f55;
+    /* 设置 BFC */
+    float: left;
+  }
+  .css-wrap-3 .first, .css-wrap-3 .second {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fcc;
+    float: left;
+  }
+</style>
+</html>
