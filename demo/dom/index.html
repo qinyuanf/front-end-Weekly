@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>dom 事件</title>
+</head>
+<body>
+  <div id="dom">点击我</div>
+  <script>
+    const dom = document.querySelector('#dom')
+    /**
+     * 事件捕获案例，冒泡反之即可
+     * 输出捕获顺序如下，即使监听时乱序
+     * 1. window
+     * 2. document
+     * 3. html
+     * 4. body
+     * 5. div
+     */
+    // 监听 html
+    document.documentElement.addEventListener('click', function () {
+      console.log('捕获 html')
+    }, true)
+    // 监听 window
+    window.addEventListener('click', function () {
+      console.log('捕获 window')
+    }, true)
+    // 监听 body
+    document.body.addEventListener('click', function () {
+      console.log('捕获 body')
+    }, true)
+    // 监听 div
+    dom.addEventListener('click', function () {
+      console.log('捕获 div')
+    }, true)
+    // 监听 document
+    document.addEventListener('click', function () {
+      console.log('捕获 document')
+    }, true)
+  </script>
+</body>
+<style>
+  #dom {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: #fff;
+  }
+</style>
+</html>

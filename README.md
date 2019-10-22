@@ -13,6 +13,8 @@
 
 ## 小记
 
+* [DOM 事件](https://github.com/qinyuanf/front-end-Weekly/issues/12)
+
 * [CSS 盒模型](https://github.com/qinyuanf/front-end-Weekly/issues/11)
 
 * [多方案实现多栏布局](https://github.com/qinyuanf/front-end-Weekly/issues/10)
